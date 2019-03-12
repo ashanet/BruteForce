@@ -1,16 +1,22 @@
-rBruteForce
+BruteForce
 ===========
 
 CakePHP 3 Plugin for Protection Against BruteForce Attacks
 
-# CakePHP rBruteForce Plugin
+# CakePHP BruteForce Protection Plugin
 
-With rBruteForce you could protect your CakePHP applications from Brute Force attacks.
+With BruteForce you could protect your CakePHP applications from Brute Force attacks.
 
 ## Requirements
 
 * CakePHP 3.0.0 or greater.
 * PHP 5.4.16 or greater.
+## Original Plugin is rBruteForce
+and can visit from page :
+
+https://github.com/rrd108/rBruteForce
+
+!!!! but it`s have same bug and same deprecated method for cakephp 3.7 + !!!
 
 ## Installation
 
@@ -39,7 +45,8 @@ The migrations files could be found in `config/Migrations`.
 ### Install via composer. 
 
 ````
-composer require rrd/rbruteforce
+composer require ashanet/brute-force
+
 ````
 
 Add the plugin to your project's `composer.json` - something like this:
@@ -47,7 +54,7 @@ Add the plugin to your project's `composer.json` - something like this:
 ````json
 {
   "require": {
-    "rrd/rbruteforce": "*"
+    "ashanet/brute-force": "^1.0"
   }
 }
 ````
@@ -55,7 +62,9 @@ Add the plugin to your project's `composer.json` - something like this:
 ### Load the plugin
 
 ```php
-Plugin::load('RBruteForce', ['bootstrap' => false, 'routes' => true]);
+use App\Application;
+Application::addPlugin('RBruteForce', ['bootstrap' => false, 'routes' => true]);
+
 ```
 
 ### .gitignore
@@ -63,7 +72,7 @@ Because this plugin has the type cakephp-plugin set in it's own composer.json, c
 
 ## Reporting Issues
 
-If you have a problem with rBruteForce please report [here](https://github.com/rrd108/rBruteForce/issues)
+If you have a problem with rBruteForce please report [here](https://github.com/ashanet/BruteForce/issues)
 
 # Documentation
 
