@@ -1,23 +1,19 @@
 {
-    "name": "Ashanet/BruteForce",
-    "description": "Ashanet/BruteForce plugin for CakePHP",
+    "name": "ashanet/brute-force",
+    "description": "CakePHP 3+ Plugin for Protection Against BruteForce Attacks",
     "type": "cakephp-plugin",
     "license": "MIT",
-    "require": {
-        "cakephp/cakephp": "^3.5"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^5.7.14|^6.0"
-    },
+    "authors": [
+        {
+            "name": "ashanet",
+            "email": "r90c09r@gmail.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
-            "Ashanet\\BruteForce\\": "src/"
+            "App\\": "src/",
+            "Ashanet\\BruteForce\\": "./vendor/Ashanet/BruteForce/src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Ashanet\\BruteForce\\Test\\": "tests/",
-            "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
-        }
-    }
+    "require": {}
 }
